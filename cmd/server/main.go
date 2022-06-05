@@ -1,17 +1,13 @@
 package main
 
 import (
-	"net/http"
-	"strconv"
-
-	reader "luis/goapi/fileReader"
-
-	"github.com/gin-gonic/gin"
+	c "luis/goapi/pkg/controller"
 )
 
 func main() {
 
-	r := gin.Default()
+	c.Start()
+	/* r := gin.Default()
 	r.GET("/api/users/:id", func(c *gin.Context) {
 		userId, err := strconv.Atoi(c.Param("id"))
 		if err != nil {
@@ -27,5 +23,5 @@ func main() {
 			"name": res,
 		})
 	})
-	r.Run() // listen and serve on 0.0.0.0:8080 (for win´dows "localhost:8080")
+	r.Run() */ // listen and serve on 0.0.0.0:8080 (for win´dows "localhost:8080")
 }

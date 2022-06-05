@@ -1,4 +1,4 @@
-package fileReader
+package repository
 
 import (
 	"bufio"
